@@ -134,7 +134,7 @@
     font-display: block;
 }
 
-[class^="holberton_school-icon-"], 
+[class^="holberton_school-icon-"],
 [class*=" holberton_school-icon-"] {
     font-family: 'holberton_school-icon' !important;
     speak: never;
@@ -262,5 +262,242 @@
 
     .service-icon {
         font-size: 94px;
+    }
+}
+
+/* ===== OUR RESULTS SECTION ===== */
+.our-results {
+    background-image: url('images/headphones_hero_2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Dark overlay */
+.our-results::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 22, 41, 0.7);
+    z-index: 1;
+}
+
+.our-results .container {
+    position: relative;
+    z-index: 2;
+}
+
+.our-results h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.our-results .section-description {
+    max-width: 637px;
+    margin: 0 auto 95px;
+    font-size: 16px;
+    line-height: 1.625;
+    color: #FFFFFF;
+}
+
+/* Results Grid */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.result-item {
+    text-align: center;
+}
+
+/* Pentagon Shape */
+.pentagon {
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+    background-color: #FF6565;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.pentagon-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.percentage {
+    font-size: 46px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+    line-height: 1;
+}
+
+.result-text {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ===== RESPONSIVE - OUR RESULTS ===== */
+@media screen and (max-width: 768px) {
+    .our-results {
+        padding: 60px 20px;
+    }
+
+    .our-results h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .our-results .section-description {
+        margin-bottom: 60px;
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 40px;
+    }
+
+    .pentagon {
+        width: 160px;
+        height: 160px;
+    }
+
+    .percentage {
+        font-size: 40px;
+    }
+
+    .result-text {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .our-results {
+        padding: 50px 20px;
+    }
+
+    .our-results h2 {
+        font-size: 24px;
+    }
+
+    .results-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        max-width: 300px;
+    }
+
+    .pentagon {
+        width: 190px;
+        height: 190px;
+    }
+
+    .percentage {
+        font-size: 46px;
+    }
+
+    .result-text {
+        font-size: 14px;
+    }
+}
+/* ===== CONTACT US SECTION ===== */
+.contact-us {
+    background-color: #FFFFFF;
+    padding: 110px 0;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #071629;
+    margin-bottom: 60px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 335px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 45px;
+}
+
+.contact-form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #071629;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #071629;
+    background-color: transparent;
+    outline: none;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact-form input::placeholder {
+    color: #071629;
+    opacity: 1;
+}
+
+.contact-form input:focus {
+    border-bottom-color: #FF6565;
+}
+
+.contact-form .btn {
+    margin-top: 20px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ===== RESPONSIVE - CONTACT US ===== */
+@media screen and (max-width: 768px) {
+    .contact-us {
+        padding: 60px 20px;
+    }
+
+    .contact-us h2 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .form-group {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-us {
+        padding: 50px 20px;
+    }
+
+    .contact-us h2 {
+        font-size: 24px;
+        margin-bottom: 40px;
     }
 }
